@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROAD BUSINESS — Matériaux, Livraison & Automobile</title>
+    <meta name="description" content="ROAD BUSINESS — Votre partenaire fiable pour l'approvisionnement et la livraison de matériaux de construction, ainsi que pour la vente de véhicules.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="RB.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#" class="logo" aria-label="ROAD BUSINESS Accueil">
+                <span class="logo-icon">RB</span>
+                <span>ROAD BUSINESS</span>
+            </a>
+            <nav aria-label="Navigation principale">
+                <ul class="nav-links">
+                    <li><a href="#accueil" class="active">Accueil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#a-propos">À propos</a></li>
+                    <li><a href="#materiaux">Matériaux</a></li>
+                    <li><a href="#vehicules">Véhicules</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact" class="nav-cta">Demander un devis</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== MOBILE MENU ===== -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#accueil">Accueil</a>
+        <a href="#services">Services</a>
+        <a href="#a-propos">À propos</a>
+        <a href="#materiaux">Matériaux</a>
+        <a href="#vehicules">Véhicules</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="nav-cta">Demander un devis</a>
+    </div>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="accueil">
+        <div class="container">
+            <div class="hero-content">
+                <h1>
+                    <span class="highlight">ROAD BUSINESS</span>
+                    <span class="accent">Construisons vos projets. Nous livrons vos matériaux.</span>
+                </h1>
+                <p class="hero-tagline">
+                    Votre partenaire fiable pour l'approvisionnement et la livraison de matériaux de construction, ainsi que pour la vente de véhicules.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">NOS SERVICES</a>
+                    <a href="#contact" class="btn btn-secondary">NOUS CONTACTER</a>
+                </div>
+                <div class="hero-badges">
+                    <span><span class="dot"></span> Qualité</span>
+                    <span><span class="dot"></span> Fiabilité</span>
+                    <span><span class="dot"></span> Livraison</span>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img class="hero-image" src="images/RB.jpg" alt="Photo de présentation ROAD BUSINESS">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="section-bg-light" id="services">
+        <div class="container">
+            <p class="section-title">NOS SERVICES</p>
+            <h2 class="section-subtitle">Des solutions adaptées à vos besoins.</h2>
+            <p class="section-description">
+                ROAD BUSINESS met à votre disposition une gamme complète de services pensés pour accompagner tous vos projets de construction et d'équipement.
+            </p>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M3 20h18M5 20V8.5l7-5 7 5V20M9 20v-5h6v5M9 11h.01M15 11h.01M9 8h6"/>
+                        </svg>
+                    </div>
+                    <h3>Matériaux de construction</h3>
+                    <div class="service-sub">Sable • Gravier • Moellon</div>
+                    <p>Approvisionnement et livraison de matériaux de qualité pour vos différents projets de construction.</p>
+                    <a href="#materiaux" class="btn-link">Voir les matériaux →</a>
+                </div>
+                <div class="service-card reveal reveal-delay-1">
+                    <div class="service-icon">
+                        <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M3 17h14l2-5h3v4h-2M6 17v2m12-2v2M7 9h9l2 3H5l2-3zm0-4h9l2 3H5l2-3z"/>
+                        </svg>
+                    </div>
+                    <h3>Livraison</h3>
+                    <div class="service-sub">Directement sur votre chantier</div>
+                    <p>Un service pratique et efficace pour recevoir vos matériaux au lieu et au moment convenus.</p>
+                    <a href="#contact" class="btn-link">Planifier une livraison →</a>
+                </div>
+                <div class="service-card reveal reveal-delay-2">
+                    <div class="service-icon">
+                        <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M3 16l2-7h11l2 7M5 16h14M7 10V7.5A1.5 1.5 0 0 1 8.5 6h7A1.5 1.5 0 0 1 17 7.5V10M8 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm8 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                        </svg>
+                    </div>
+                    <h3>Vente de véhicules</h3>
+                    <div class="service-sub">Des véhicules adaptés à vos besoins</div>
+                    <p>Présentation des véhicules disponibles avec image, modèle, caractéristiques et bouton de contact.</p>
+                    <a href="#vehicules" class="btn-link">Voir les véhicules →</a>
+                </div>
+                <div class="service-card reveal reveal-delay-3">
+                    <div class="service-icon">
+                        <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M7 12.5l2.5 2.5L17 5.5M5 17.5A2.5 2.5 0 1 1 5 12.5a2.5 2.5 0 0 1 0 5zm14 0a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+                        </svg>
+                    </div>
+                    <h3>Solutions pour professionnels</h3>
+                    <div class="service-sub">Particuliers, entreprises, entrepreneurs</div>
+                    <p>ROAD BUSINESS accompagne différents types de clients dans leurs projets avec un service sur mesure.</p>
+                    <a href="#contact" class="btn-link">Parlons de votre projet →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== POURQUOI NOUS CHOISIR ===== -->
+    <section class="why-section" id="pourquoi">
+        <div class="container">
+            <p class="section-title">POURQUOI ROAD BUSINESS ?</p>
+            <h2 class="section-subtitle">Des engagements forts pour votre réussite.</h2>
+            <p class="section-description section-description-light">
+                Nous mettons un point d'honneur à offrir un service exemplaire à chaque étape de votre projet.
+            </p>
+            <div class="why-grid">
+                <div class="why-card reveal">
+                    <div class="why-number">01</div>
+                    <div class="why-icon">
+                        <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 12.5l4 4L19 2.5"/>
+                        </svg>
+                    </div>
+                    <h4>FIABILITÉ</h4>
+                    <p>Un service sérieux et professionnel, fondé sur des engagements tenus et une communication transparente.</p>
+                </div>
+                <div class="why-card reveal reveal-delay-1">
+                    <div class="why-number">02</div>
+                    <div class="why-icon">
+                        <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 2.5l2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 8.9l6.1-.9L12 2.5z"/>
+                        </svg>
+                    </div>
+                    <h4>QUALITÉ</h4>
+                    <p>Des matériaux rigoureusement sélectionnés et adaptés aux exigences de vos projets de construction.</p>
+                </div>
+                <div class="why-card reveal reveal-delay-2">
+                    <div class="why-number">03</div>
+                    <div class="why-icon">
+                        <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M13 2.5l-2 8h4l-7 11 2-8H5l8-11z"/>
+                        </svg>
+                    </div>
+                    <h4>RAPIDITÉ</h4>
+                    <p>Une livraison pensée pour vous faire gagner du temps et respecter le calendrier de vos chantiers.</p>
+                </div>
+                <div class="why-card reveal reveal-delay-3">
+                    <div class="why-number">04</div>
+                    <div class="why-icon">
+                        <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M4 18.5V7.5l8-4 8 4v11L12 22l-8-3.5zm8-13.5v11M8 9.5h8M8 13h8"/>
+                        </svg>
+                    </div>
+                    <h4>PROFESSIONNALISME</h4>
+                    <p>Une équipe orientée vers la satisfaction du client, à votre écoute et force de proposition.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== À PROPOS ===== -->
+    <section id="a-propos">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p class="section-title" style="text-align:left;">À PROPOS DE ROAD BUSINESS</p>
+                    <h2>Une entreprise <span class="highlight">solide</span> au service de vos <span class="highlight">projets</span>.</h2>
+                    <p>
+                        ROAD BUSINESS est une entreprise spécialisée dans la fourniture et la livraison de matériaux de construction ainsi que dans la vente de véhicules.
+                    </p>
+                    <p>
+                        Notre objectif est de proposer à nos clients des solutions fiables, pratiques et professionnelles pour accompagner leurs projets, qu'il s'agisse de construction résidentielle, de chantiers professionnels ou d'acquisition de véhicules.
+                    </p>
+                    <p class="quote">
+                        « Chaque projet mérite des matériaux de qualité et un partenaire sur qui compter. C'est notre promesse. »
+                    </p>
+                    <a href="#contact" class="btn btn-primary" style="margin-top:20px;">EN SAVOIR PLUS</a>
+                </div>
+                <div class="about-image reveal reveal-delay-1">
+                    <img id="aboutImage" src="images/AP.jpg" alt="Road Business Sarl - équipe et activité professionnelle" class="about-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MATÉRIAUX ===== -->
+    <section class="section-bg-light" id="materiaux">
+        <div class="container">
+            <p class="section-title">NOS MATÉRIAUX</p>
+            <h2 class="section-subtitle">Un catalogue professionnel de matériaux de qualité.</h2>
+            <p class="section-description">
+                Sable, gravier et moellon disponibles à la vente et livrables directement sur votre chantier partout dans la région.
+            </p>
+            <div class="materials-grid">
+                <div class="material-card reveal">
+                    <div class="material-image material-image-photo">
+                        <img src="images/sable.jpg" alt="Camion déversant du sable de construction">
+                    </div>
+                    <div class="material-body">
+                        <h3>Sable</h3>
+                        <p>Sable de construction fin et propre, idéal pour la maçonnerie, les enduits, les mortiers et les travaux de finition.</p>
+                        <a href="#contact" class="btn btn-primary btn-sm">COMMANDER / DEMANDER UN DEVIS</a>
+                    </div>
+                </div>
+                <div class="material-card reveal reveal-delay-1">
+                    <div class="material-image material-image-photo">
+                        <img src="images/gravier.jpg" alt="Camion chargé de gravier de construction">
+                    </div>
+                    <div class="material-body">
+                        <h3>Gravier</h3>
+                        <p>Gravier concassé de différentes granulométries pour les fondations, le béton, les allées et les aménagements extérieurs.</p>
+                        <a href="#contact" class="btn btn-primary btn-sm">COMMANDER / DEMANDER UN DEVIS</a>
+                    </div>
+                </div>
+                <div class="material-card reveal reveal-delay-2">
+                    <div class="material-image material-image-photo">
+                        <img src="images/moellon.jpg" alt="Moellon de construction destiné aux fondations et aux murs">
+                    </div>
+                    <div class="material-body">
+                        <h3>Moellon</h3>
+                        <p>Moellon de qualité pour les murs, les fondations, les murets de soutènement et les travaux de gros œuvre.</p>
+                        <a href="#contact" class="btn btn-primary btn-sm">COMMANDER / DEMANDER UN DEVIS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== VÉHICULES ===== -->
+    <section id="vehicules">
+        <div class="container">
+            <p class="section-title">NOS VÉHICULES</p>
+            <h2 class="section-subtitle">Des véhicules fiables et adaptés à vos besoins.</h2>
+            <p class="section-description">
+                Découvrez notre sélection de véhicules disponibles. Contactez-nous pour plus d'informations ou pour planifier une visite.
+            </p>
+            <div class="vehicles-grid">
+                <div class="vehicle-card reveal">
+                    <div class="vehicle-image vehicle-image-photo">
+                        <img src="images/car1.jpeg" alt="Toyota Vellfire blanc">
+                    </div>
+                    <div class="vehicle-body">
+                        <h3>Toyota Vellfire</h3>
+                        <div class="vehicle-price">Prix sur demande</div>
+                        <div class="vehicle-specs">
+                            <span>....</span>
+                            <span>....</span>
+                            <span>....</span>
+                            <span>....</span>
+                        </div>
+                        <a href="#contact" class="btn btn-primary btn-sm">VOIR LES DÉTAILS</a>
+                    </div>
+                </div>
+                <div class="vehicle-card reveal reveal-delay-1">
+                    <div class="vehicle-image vehicle-image-photo">
+                        <img src="images/car2.jpeg" alt="Mazda CX-5 rouge">
+                    </div>
+                    <div class="vehicle-body">
+                        <h3>Mazda CX-5</h3>
+                        <div class="vehicle-price">Prix sur demande</div>
+                        <div class="vehicle-specs">
+                            <span>....</span>
+                            <span>....</span>
+                            <span>....</span>
+                            <span>....</span>
+                        </div>
+                        <a href="#contact" class="btn btn-primary btn-sm">VOIR LES DÉTAILS</a>
+                    </div>
+                </div>
+                <div class="vehicle-card reveal reveal-delay-2">
+                    <div class="vehicle-image vehicle-image-photo">
+                        <img src="images/car3.jpeg" alt="Toyota Raum gris">
+                    </div>
+                    <div class="vehicle-body">
+                        <h3>Toyota Raum</h3>
+                        <div class="vehicle-price">Prix sur demande</div>
+                        <div class="vehicle-specs">
+                            <span>....</span>
+                            <span>....</span>
+                            <span>....</span>
+                            <span>....</span>
+                        </div>
+                        <a href="#contact" class="btn btn-primary btn-sm">VOIR LES DÉTAILS</a>
+                    </div>
+                </div>
+            </div>
+            <p style="text-align:center; margin-top:24px; font-size:0.85rem; color:var(--gray-subtle);">
+                <!-- Emplacement pour ajouter facilement de nouveaux véhicules : copiez une carte .vehicle-card et modifiez le contenu -->
+                D'autres véhicules disponibles — contactez-nous pour le catalogue complet.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== APPEL À L'ACTION ===== -->
+    <section class="cta-section" id="cta">
+        <div class="container">
+            <h2>UN PROJET EN VUE ?</h2>
+            <p>Besoin de matériaux ou d'un véhicule ? ROAD BUSINESS est prêt à vous accompagner.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-white">CONTACTEZ-NOUS</a>
+                <a href="#contact" class="btn btn-outline-white">DEMANDER UN DEVIS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact">
+        <div class="container">
+            <p class="section-title">CONTACTEZ ROAD BUSINESS</p>
+            <h2 class="section-subtitle">Parlons de votre projet.</h2>
+            <p class="section-description">
+                Notre équipe vous répond rapidement. Appelez-nous, écrivez-nous ou utilisez le formulaire ci-dessous.
+            </p>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item reveal">
+                        <div class="contact-item-icon">
+                            <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M5 4.5h4l1.5 5-2.3 2.3a15.5 15.5 0 0 0 9.5 9.5l2.3-2.3 5 1.5v4a2 2 0 0 1-2 2C11.4 22 2 12.6 2 6.5a2 2 0 0 1 2-2z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-item-info">
+                            <div class="label">Téléphone</div>
+                            <div class="value">
+                                <a href="tel:+243899934567">+243 899 934 567</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-item reveal reveal-delay-1">
+                        <div class="contact-item-icon">
+                            <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M7 7h10a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2zm0 0 5 4 5-4"/>
+                            </svg>
+                        </div>
+                        <div class="contact-item-info">
+                            <div class="label">WhatsApp</div>
+                            <div class="value">
+                                <a href="https://wa.me/243899934567" target="_blank" rel="noopener noreferrer">+243 899 934 567</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-item reveal reveal-delay-2">
+                        <div class="contact-item-icon">
+                            <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 7.5A2.5 2.5 0 0 1 6.5 5h11A2.5 2.5 0 0 1 20 7.5v9A2.5 2.5 0 0 1 17.5 19h-11A2.5 2.5 0 0 1 4 16.5v-9zm0 0 8 6 8-6"/>
+                            </svg>
+                        </div>
+                        <div class="contact-item-info">
+                            <div class="label">Email</div>
+                            <div class="value">
+                                roadbusiness@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-item reveal reveal-delay-3">
+                        <div class="contact-item-icon">
+                            <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 21s6-5.4 6-11a6 6 0 1 0-12 0c0 5.6 6 11 6 11zm0-8.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-item-info">
+                            <div class="label">Adresse</div>
+                            <div class="value">
+                                <a href="https://maps.app.goo.gl/A5gcSoSd4CPU3En39" target="_blank" rel="noopener noreferrer">
+                                    Quartier Joli Site Commune annexe, 33 Chau. de Kasenga, Lubumbashi
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-item reveal reveal-delay-3">
+                        <div class="contact-item-icon">
+                            <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 2.5v3M12 18.5v3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M2.5 12h3M18.5 12h3M4.9 19.1l2.1-2.1M17 7l2.1-2.1M12 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-item-info">
+                            <div class="label">Horaires d'ouverture</div>
+                            <div class="value">
+                                Lundi — Samedi : 7h00 — 18h00<br>
+                                Dimanche : Fermé
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form reveal reveal-delay-1">
+                    <h3>Envoyez-nous votre demande</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" placeholder="Ex : oradi MBIKALE" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Téléphone / WhatsApp *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+243 ..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="vous@exemple.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service recherché *</label>
+                            <select id="service" name="service" required>
+                                <option value="">— Sélectionnez un service —</option>
+                                <option value="materiaux">Matériaux de construction (Sable, Gravier, Moellon)</option>
+                                <option value="livraison">Livraison sur chantier</option>
+                                <option value="vehicules">Vente de véhicules</option>
+                                <option value="devis">Demande de devis</option>
+                                <option value="autre">Autre demande</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" placeholder="Décrivez votre besoin : quantité, lieu de livraison, type de matériau, véhicule souhaité..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width:100%;">ENVOYER LA DEMANDE</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- ===== GOOGLE MAPS ===== -->
+            <div class="map-container reveal">
+                <iframe
+                    title="Localisation Road Business Sarl"
+                    src="https://maps.google.com/maps?q=-11.6601564,27.5044705&z=16&output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+                </iframe>
+                <div class="map-link-row">
+                    <a href="https://maps.app.goo.gl/A5gcSoSd4CPU3En39" target="_blank" rel="noopener noreferrer">
+                        Ouvrir sur Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#accueil" class="logo">
+                        <span class="logo-icon">RB</span>
+                        <span>ROAD BUSINESS</span>
+                    </a>
+                    <p class="footer-tagline">Construction • Livraison • Automobile</p>
+                    <p>
+                        Votre partenaire de confiance pour l'approvisionnement en matériaux de construction, la livraison sur chantier et la vente de véhicules professionnels.
+                    </p>
+                    <div class="footer-social-icons" aria-label="Réseaux sociaux">
+                        <div class="social-icon instaIcon">
+                            <span class="iconName">Instagram</span>
+                            <a href="#" aria-label="Instagram" class="social-link insta">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path clip-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" fill-rule="evenodd" fill="currentColor"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="social-icon x-social">
+                            <span class="iconName">X</span>
+                            <a href="#" aria-label="X" class="social-link x-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M18.901 2H21.5l-6.77 7.736L22.8 22h-6.11l-4.77-6.98L6.89 22H4.29l7.25-8.28L1.2 2h6.26l4.31 6.37L18.9 2Zm-1.07 18h1.69L7.14 3.9H5.38L17.83 20Z" fill="currentColor"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="social-icon whatsapp">
+                            <span class="iconName">WhatsApp</span>
+                            <a href="#" aria-label="WhatsApp" class="social-link whats">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112s-.58.729-.711.879-.262.168-.486.056-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374s.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666-.181-.435-.366-.377-.504-.383a9.65 9.65 0 0 0-.429-.008.826.826 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321c.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.537.171 1.026.146 1.413.089.431-.064 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.067-.056-.094-.207-.151-.43-.263" fill="currentColor"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="social-icon facebook-social">
+                            <span class="iconName">Facebook</span>
+                            <a href="#" aria-label="Facebook" class="social-link facebook-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M13.5 8.5V6.5C13.5 5.7 14.1 5 15 5H16.5V2H13.5C11 2 9 4 9 6.5V8.5H6.5V12H9V22H13.5V12H16.5L18 8.5H13.5Z" fill="currentColor"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4>Liens rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#a-propos">À propos</a></li>
+                        <li><a href="#materiaux">Matériaux</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Nos services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#vehicules">Véhicules</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#cta">Demander un devis</a></li>
+                        <li><a href="#materiaux">Catalogue matériaux</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:+243000000000">☎ +243 000 000 000</a></li>
+                        <li><a href="mailto:contact@roadbusiness.com">✉ contact@roadbusiness.com</a></li>
+                        <li><a href="#contact">Lubumbashi, RD Congo</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 ROAD BUSINESS — Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // ===== WHATSAPP CONTACT FORM =====
+        const contactForm = document.getElementById('contactForm');
+        const businessWhatsApp = '243899934567';
+
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const formData = new FormData(contactForm);
+            const service = document.getElementById('service').selectedOptions[0].text;
+            const message = [
+                'Bonjour ROAD BUSINESS,',
+                '',
+                'Je souhaite obtenir des informations concernant :',
+                service,
+                '',
+                `Nom : ${formData.get('name')}`,
+                `Téléphone / WhatsApp : ${formData.get('phone')}`,
+                `Email : ${formData.get('email') || 'Non renseigné'}`,
+                '',
+                `Message : ${formData.get('message')}`
+            ].join('\n');
+
+            window.open(`https://wa.me/${businessWhatsApp}?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
+        });
+
+        // ===== HEADER SCROLL EFFECT =====
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // ===== HAMBURGER MENU =====
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburger.addEventListener('click', () => {
+            const isOpen = mobileMenu.classList.contains('open');
+            mobileMenu.classList.toggle('open');
+            hamburger.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', !isOpen);
+        });
+
+        // Close mobile menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+                hamburger.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // ===== ACTIVE NAV LINK =====
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const sections = document.querySelectorAll('section[id]');
+
+        function updateActiveLink() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 120;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveLink);
+        updateActiveLink();
+
+        // ===== SCROLL REVEAL ANIMATION =====
+        const revealElements = document.querySelectorAll('.reveal');
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // ===== SMOOTH SCROLL FOR ALL ANCHOR LINKS =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const target = document.querySelector(targetId);
+                if (target) {
+                    e.preventDefault();
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // ===== ABOUT IMAGE ROTATION =====
+        const aboutImage = document.getElementById('aboutImage');
+        if (aboutImage) {
+            const aboutImages = ['images/AP.jpg', 'images/VP.jpg'];
+            let aboutIndex = 0;
+
+            setInterval(() => {
+                aboutIndex = (aboutIndex + 1) % aboutImages.length;
+                aboutImage.style.opacity = '0';
+
+                setTimeout(() => {
+                    aboutImage.src = aboutImages[aboutIndex];
+                    aboutImage.alt = aboutIndex === 0
+                        ? 'Road Business Sarl - équipe et activité professionnelle'
+                        : 'Road Business Sarl - présentation de l’entreprise';
+                    aboutImage.style.opacity = '1';
+                }, 250);
+            }, 10000);
+        }
+    </script>
+</body>
+</html>  
