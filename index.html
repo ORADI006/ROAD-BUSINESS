@@ -281,7 +281,7 @@
                     </div>
                 </div>
                 <div class="vehicle-card reveal reveal-delay-1">
-                    <div class="vehicle-image vehicle-image-photo">
+                    <div class="vehicle-image vehicle-image-photo mazda-image">
                         <img src="images/car2.jpeg" alt="Mazda CX-5 rouge">
                     </div>
                     <div class="vehicle-body">
@@ -297,7 +297,7 @@
                     </div>
                 </div>
                 <div class="vehicle-card reveal reveal-delay-2">
-                    <div class="vehicle-image vehicle-image-photo">
+                    <div class="vehicle-image vehicle-image-photo raum-image">
                         <img src="images/car3.jpeg" alt="Toyota Raum gris">
                     </div>
                     <div class="vehicle-body">
@@ -329,6 +329,20 @@
                 <a href="#contact" class="btn btn-white">CONTACTEZ-NOUS</a>
                 <a href="#contact" class="btn btn-outline-white">DEMANDER UN DEVIS</a>
             </div>
+        </div>
+    </section>
+
+    <!-- ===== TÉMOIGNAGES ===== -->
+    <section class="section-bg-light testimonials-section" id="temoignages">
+        <div class="container">
+            <p class="section-title">ILS NOUS FONT CONFIANCE</p>
+            <h2 class="section-subtitle">Votre expérience compte.</h2>
+            <p class="section-description">Découvrez les avis de nos clients et partagez votre expérience.</p>
+
+            <div class="testimonials-grid" id="testimonialsList" aria-live="polite">
+                <p class="testimonials-loading">Chargement des témoignages…</p>
+            </div>
+
         </div>
     </section>
 
@@ -548,6 +562,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script>
         // ===== WHATSAPP CONTACT FORM =====
         const contactForm = document.getElementById('contactForm');
@@ -682,6 +697,47 @@
                 }, 250);
             }, 10000);
         }
+
+        // ===== SUPABASE TESTIMONIALS =====
+        const supabaseUrl = 'https://wlilhuabdhbeqzfsnzsx.supabase.co';
+        const supabaseKey = 'sb_publishable_Y4j8-gqM25IVAg5dYTUOgQ_sgsPrpuc';
+        const supabaseClient = window.supabase.createClient(supabaseUrl, supabaseKey);
+        const testimonialsList = document.getElementById('testimonialsList');
+
+        const escapeHtml = (value) => String(value).replace(/[&<>'"]/g, char => ({
+            '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#039;', '"': '&quot;'
+        }[char]));
+
+        const initials = (name) => name.split(/\s+/).filter(Boolean).slice(0, 2).map(part => part[0]).join('').toUpperCase();
+        const publicName = (name) => {
+            const parts = name.trim().split(/\s+/);
+            return parts.length > 1 ? `${parts[0]} ${parts[1][0]}.` : parts[0];
+        };
+
+        function testimonialCard(item) {
+            const photo = item.photo_url
+                ? `<img src="${escapeHtml(item.photo_url)}" alt="Photo de ${escapeHtml(publicName(item.full_name))}">`
+                : `<span aria-hidden="true">${escapeHtml(initials(item.full_name))}</span>`;
+            return `<article class="testimonial-card">
+                <div class="testimonial-head"><div class="testimonial-avatar">${photo}</div>
+                    <div><h3>${escapeHtml(publicName(item.full_name))}</h3><p>${escapeHtml(item.location)}</p></div></div>
+                <p class="testimonial-stars" aria-label="Note : ${item.rating} sur 5">${'★'.repeat(item.rating)}<span>${'★'.repeat(5 - item.rating)}</span></p>
+                <blockquote>« ${escapeHtml(item.message)} »</blockquote>
+            </article>`;
+        }
+
+        async function loadTestimonials() {
+            const { data, error } = await supabaseClient.from('public_testimonials').select('*').order('created_at', { ascending: false }).limit(12);
+            if (error) {
+                testimonialsList.innerHTML = '<p class="testimonials-loading">Les témoignages seront bientôt disponibles.</p>';
+                return;
+            }
+            testimonialsList.innerHTML = data.length
+                ? data.map(testimonialCard).join('')
+                : '<p class="testimonials-loading">Soyez le premier à partager votre expérience avec ROAD BUSINESS.</p>';
+        }
+
+        loadTestimonials();
     </script>
 </body>
-</html>  
+</html>
